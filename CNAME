@@ -1,1 +1,4 @@
-www.indiegraphic.com
+echo "www.ju.je" > CNAME  
+git add -A  
+git commit -m “Added CNAME file.”  
+git push origin master  
