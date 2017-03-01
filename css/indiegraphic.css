@@ -1,29 +1,31 @@
 .body {
   height: 100%;
   background-color: #000;
-}
-
-.section {
-  height: 100%;
-  padding-top: 40px;
-  padding-left: 40px;
   background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('../images/store.jpg');
   background-image: linear-gradient(180deg, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('../images/store.jpg');
   background-position: 0px 0px, 50% 50%;
   background-size: auto, cover;
   background-repeat: repeat, no-repeat;
+  background-attachment: scroll, fixed;
+}
+
+.section {
+  height: 100%;
+  padding-top: 40px;
 }
 
 .container {
   position: relative;
   height: 100%;
   padding-top: 20px;
+  padding-left: 60px;
 }
 
 .logo {
   position: absolute;
   top: 80px;
   margin-bottom: 20px;
+  margin-left: 40px;
 }
 
 .h1 {
@@ -92,28 +94,76 @@
 }
 
 .submit-button {
+  height: 50px;
   margin-top: 12px;
   border-radius: 3px;
+  background-color: #fff;
+  color: #000;
   font-weight: 700;
 }
 
+.submit-button:hover {
+  opacity: 0.8;
+}
+
 .text-field {
+  height: 50px;
   border-style: none none solid;
   border-top-width: 1px;
   border-top-color: #000;
-  border-bottom-width: 3px;
+  border-bottom-width: 1px;
   border-bottom-color: #fff;
-  background-color: transparent;
+  border-radius: 3px;
+  background-color: hsla(0, 0%, 100%, .1);
   color: #fff;
+  font-weight: 700;
+}
+
+.mobile-fade {
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100px;
+  background-image: -webkit-linear-gradient(270deg, transparent, #000 93%);
+  background-image: linear-gradient(180deg, transparent, #000 93%);
 }
 
 @media (max-width: 991px) {
+  .body {
+    height: auto;
+    background-image: -webkit-linear-gradient(270deg, transparent 88%, #000), -webkit-linear-gradient(270deg, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('../images/store.jpg');
+    background-image: linear-gradient(180deg, transparent 88%, #000), linear-gradient(180deg, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('../images/store.jpg');
+    background-position: 0px 0px, 0px 0px, 50% 50%;
+    background-size: auto, auto, cover;
+    background-repeat: repeat, repeat, no-repeat;
+    background-attachment: scroll, scroll, scroll;
+  }
+  .section {
+    height: auto;
+  }
+  .container {
+    height: auto;
+    padding-bottom: 140px;
+  }
   .logo {
     position: static;
+    margin-left: 80px;
   }
 }
 
 @media (max-width: 767px) {
+  .body {
+    background-image: -webkit-linear-gradient(270deg, transparent 71%, #000), -webkit-linear-gradient(270deg, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('../images/store.jpg');
+    background-image: linear-gradient(180deg, transparent 71%, #000), linear-gradient(180deg, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('../images/store.jpg');
+    background-position: 0px 0px, 0px 0px, 50% -100px;
+    background-size: auto, auto, cover;
+    background-repeat: repeat, repeat, no-repeat;
+    background-attachment: scroll, scroll, scroll;
+  }
+  .logo {
+    margin-left: 60px;
+  }
   .text.starting-at {
     right: 40px;
   }
@@ -123,7 +173,8 @@
     line-height: 80px;
   }
   .more {
-    right: 173px;
+    top: 190px;
+    right: 168px;
   }
   .from-wrapper {
     right: 16px;
@@ -131,11 +182,20 @@
 }
 
 @media (max-width: 479px) {
+  .body {
+    background-image: -webkit-linear-gradient(270deg, transparent 80%, #000), -webkit-linear-gradient(270deg, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('../images/store.jpg');
+    background-image: linear-gradient(180deg, transparent 80%, #000), linear-gradient(180deg, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('../images/store.jpg');
+    background-position: 0px 0px, 0px 0px, 50% 50%;
+    background-size: auto, auto, cover;
+    background-repeat: repeat, repeat, no-repeat;
+    background-attachment: scroll, scroll, scroll;
+  }
   .section {
     padding-right: 20px;
     padding-left: 20px;
   }
   .container {
+    padding-left: 0px;
     text-align: center;
   }
   .logo {
@@ -150,6 +210,7 @@
   }
   .text {
     display: block;
+    width: 212px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -166,12 +227,17 @@
   }
   .more {
     position: relative;
-    top: 0px;
+    top: 4px;
     right: 0px;
     margin-top: 16px;
   }
   .from-wrapper {
+    position: static;
     top: 592px;
+    width: auto;
+    margin-top: 16px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
