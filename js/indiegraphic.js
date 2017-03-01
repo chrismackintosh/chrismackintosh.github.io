@@ -4342,5 +4342,5 @@
  * Webflow: Interactions: Init
  */
 Webflow.require('ix').init([
-  {"slug":"prev-proj-nabthat","name":"Prev Proj Nabthat","value":{"style":{},"triggers":[{"type":"hover","selector":".prevproj-nabthat","stepsA":[{"opacity":1,"transition":"opacity 200 ease 0"}],"stepsB":[{"opacity":0,"transition":"opacity 200 ease 0"}]}]}}
+  {"slug":"form","name":"Form","value":{"style":{},"triggers":[{"type":"click","selector":".from-wrapper","stepsA":[{"display":"block","opacity":1,"transition":"opacity 200 ease 0"}],"stepsB":[]},{"type":"click","stepsA":[{"display":"none"}],"stepsB":[]}]}}
 ]);

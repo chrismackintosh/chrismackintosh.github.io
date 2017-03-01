@@ -1,834 +1,177 @@
 .body {
   height: 100%;
-  background-color: #0e38b1;
+  background-color: #000;
 }
 
-.main-section {
-  position: relative;
-  overflow: scroll;
+.section {
   height: 100%;
-  border: 12px solid #0e38b1;
+  padding-top: 40px;
+  padding-left: 40px;
+  background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('../images/store.jpg');
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('../images/store.jpg');
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
 }
 
-.work-card {
+.container {
   position: relative;
-  display: inline-block;
-  overflow: hidden;
-  width: 50%;
-  height: 45%;
-  min-height: 380px;
-  margin-bottom: -5px;
-  background-color: #0e38b1;
+  height: 100%;
+  padding-top: 20px;
 }
 
-.work-card.card1 {
-  padding-top: 112px;
-  background-color: #0e38b1;
-  text-align: center;
-}
-
-.work-card.card2 {
-  background-image: url('../images/sally-hero.png');
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.work-card.card3 {
-  background-color: #fff;
-  background-image: url('../images/Apple-Watch_Meetly1.png');
-  background-position: 50% 25%;
-  background-size: 440px;
-  background-repeat: no-repeat;
-}
-
-.work-card.card4 {
-  background-color: #fff;
-  background-image: url('../images/si-hero.png');
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.work-card.card5 {
-  background-image: url('../images/L6-Hero.png');
-  background-position: 16% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.work-card.card6 {
-  background-image: url('../images/glance_profile.png');
-  background-position: 50% 3%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.work-card.card7 {
-  background-image: url('../images/IMG_0535.jpg');
-  background-position: 50% 5%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.work-card.about {
-  padding-top: 18px;
-  color: #fff;
-  font-size: 16px;
-  line-height: 22px;
-  text-align: center;
+.logo {
+  position: absolute;
+  top: 80px;
+  margin-bottom: 20px;
 }
 
 .h1 {
-  margin-top: 2px;
-  margin-bottom: 0px;
-  font-family: Lato, sans-serif;
-  color: #fff;
-  font-size: 10px;
-  line-height: 13px;
-  letter-spacing: 0.5px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.email-link {
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  bottom: 6px;
+  width: 220px;
+  margin-bottom: 40px;
   padding-bottom: 20px;
-  -webkit-transition: color 200ms ease;
-  transition: color 200ms ease;
-  font-family: Lato, sans-serif;
+  border-bottom: 4px solid #fff;
   color: #fff;
-  font-size: 10px;
-  line-height: 10px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  text-decoration: none;
-  text-transform: uppercase;
+  line-height: 46px;
 }
 
-.email-link:hover {
-  color: hsla(0, 0%, 100%, .8);
+.text {
+  width: 220px;
+  color: #fff;
 }
 
-.project-details-button {
+.text.starting-at {
   position: absolute;
-  top: 20px;
-  right: 40px;
-  border: 4px solid #0e38b1;
-  background-color: #0e38b1;
-  box-shadow: 13px 13px 37px 0 rgba(0, 0, 0, .3);
-  -webkit-transition: background-color 100ms ease;
-  transition: background-color 100ms ease;
-  font-family: Lato, sans-serif;
-  color: #fff;
-  font-size: 12px;
+  top: 60px;
+  right: 142px;
   font-weight: 700;
-  text-align: center;
-  letter-spacing: 1px;
-  text-transform: uppercase;
 }
 
-.project-details-button:hover {
-  border: 4px solid #0e38b1;
-  background-color: #fff;
-  color: #0051ca;
-}
-
-.project-details-button.locked:hover {
-  background-color: #0e38b1;
-  color: #fff;
-}
-
-.button-div {
+.price {
   position: absolute;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  height: 100px;
-}
-
-.fa {
-  font-family: Fontawesome, sans-serif;
-}
-
-.h2 {
-  display: block;
-  margin-bottom: 20px;
-  padding-bottom: 6px;
-  font-family: Lato, sans-serif;
+  top: 82px;
+  right: 142px;
   color: #fff;
-  font-size: 14px;
-  line-height: 12px;
-  font-weight: 700;
-  text-align: left;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-}
-
-.h2.h2-sally {
-  color: #c7aa96;
-  font-weight: 900;
-}
-
-.list {
-  margin-top: 16px;
-  font-family: soleil, sans-serif;
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  list-style-type: none;
-  -webkit-column-count: 2;
-  -moz-column-count: 2;
-  column-count: 2;
-}
-
-.list-item {
-  margin-bottom: 16px;
-  text-align: left;
-}
-
-.profile-picture {
-  display: inline-block;
-  width: 80px;
-  margin-bottom: 13px;
-}
-
-.image {
-  border-radius: 180px;
-  opacity: 0.8;
-  -webkit-filter: contrast(116%);
-  filter: contrast(116%);
-}
-
-.h4 {
-  margin-top: 8px;
-  margin-bottom: 0px;
-  font-family: Lato, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-}
-
-.h4.h4-sally {
-  color: #c7aa96;
-  font-weight: 900;
-}
-
-.job-title {
-  position: relative;
-  top: -6px;
-  font-family: minion-pro, sans-serif;
-  font-size: 13px;
-  font-style: italic;
+  font-size: 100px;
+  line-height: 100px;
   font-weight: 700;
 }
 
-.p-about {
-  font-family: minion-pro, sans-serif;
-  font-size: 14px;
-  line-height: 23px;
-  font-weight: 400;
-}
-
-.profile-header-wrap {
+.dollar-sign {
   position: relative;
-  top: 16px;
-  right: -13px;
-  display: inline-block;
-  text-align: left;
-}
-
-.link {
-  -webkit-transition: opacity 200ms ease;
-  transition: opacity 200ms ease;
-  font-family: Lato, sans-serif;
-  color: #fff;
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.link:hover {
-  opacity: 0.75;
-}
-
-.link.about-links {
-  margin-right: 12px;
-}
-
-.job-title-alt {
-  font-weight: 400;
-}
-
-.project-hero-section {
-  position: relative;
-  height: 100%;
-  background-image: url('../images/sally-hero.png');
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.project-h1 {
-  font-family: 'Chronicle display light', sans-serif;
-  color: #c7aa96;
-  font-size: 80px;
-  font-weight: 200;
-  text-align: center;
-}
-
-.project-detail-section {
-  position: relative;
-  padding: 150px 100px;
-  background-color: #fff;
-}
-
-.project-page-logo {
-  position: absolute;
-  left: 70px;
-  top: 23px;
-  z-index: 1;
-  width: 138px;
-}
-
-.badge {
-  padding-right: 10px;
-  padding-left: 10px;
-  border-radius: 4px;
-  background-color: #4c4c4c;
-}
-
-.badge.sally-badge {
-  position: absolute;
-  top: 28px;
-  right: -45px;
-  font-family: Lato, sans-serif;
-  color: #fff;
-  font-size: 10px;
-  font-weight: 900;
-  text-align: center;
-  letter-spacing: 1px;
-}
-
-.project-title-wrap {
-  position: absolute;
-  right: 242px;
-  bottom: 183px;
-}
-
-.p {
-  max-width: 600px;
-  font-family: minion-pro, sans-serif;
-  color: #4c4c4c;
-  font-size: 24px;
-  line-height: 36px;
-  font-weight: 400;
-}
-
-.p.p-small {
-  color: #4c4c4c;
-  font-size: 20px;
-  line-height: 30px;
-}
-
-.meta {
-  font-family: Lato, sans-serif;
-  color: #535353;
-  font-weight: 400;
-}
-
-.project-mid-hero {
-  height: 600px;
-  background-color: #fff;
-  background-image: url('../images/sally-subhero.png'), -webkit-linear-gradient(270deg, #f3f0f0, #fff);
-  background-image: url('../images/sally-subhero.png'), linear-gradient(180deg, #f3f0f0, #fff);
-  background-position: 50% 46%, 0px 0px;
-  background-size: 750px, auto;
-  background-repeat: no-repeat, repeat;
-}
-
-.project-detail-body-section {
-  padding: 100px;
-  background-color: #fff;
-}
-
-.h3 {
-  font-family: minion-pro, sans-serif;
-  color: #4c4c4c;
-  font-size: 30px;
-  line-height: 45px;
-  font-weight: 400;
-}
-
-.project-detail-p-wrap {
-  display: block;
-  max-width: 610px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.next-project-section {
-  height: 200px;
-}
-
-.next-project-col1 {
-  text-align: center;
-}
-
-.next-project-col2 {
-  -webkit-transition: background-color 200ms ease;
-  transition: background-color 200ms ease;
-  text-align: center;
-}
-
-.next-project-link-block {
-  width: 100%;
-  height: 200px;
-  padding-top: 50px;
-  -webkit-transition: background-color 200ms ease;
-  transition: background-color 200ms ease;
-  color: #fff;
-  text-decoration: none;
-}
-
-.next-project-link-block:hover {
-  background-color: #0b2c8a;
-}
-
-.next-project-label {
-  position: relative;
-  z-index: 1;
-  font-family: Lato, sans-serif;
-  font-size: 11px;
-  font-weight: 900;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-}
-
-.next-project-title {
-  position: relative;
-  z-index: 1;
-  font-family: 'Chronicle display light', sans-serif;
+  top: -42px;
   font-size: 40px;
   font-weight: 400;
-  text-align: center;
 }
 
-.prevproj-nabthat {
+.more {
   position: absolute;
-  left: 0px;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  background-image: -webkit-linear-gradient(270deg, rgba(0, 81, 202, .5), rgba(0, 81, 202, .5)), url('../images/IMG_0535.jpg');
-  background-image: linear-gradient(180deg, rgba(0, 81, 202, .5), rgba(0, 81, 202, .5)), url('../images/IMG_0535.jpg');
-  background-position: 0px 0px, 50% 3%;
-  background-size: auto, cover;
-  background-repeat: repeat, no-repeat;
+  top: 212px;
+  right: 266px;
+  display: inline-block;
+  padding: 10px 34px;
+  border-radius: 3px;
+  background-color: #fff;
+  color: #000;
+  font-size: 26px;
+  line-height: 26px;
+  text-decoration: none;
+}
+
+.more:hover {
+  opacity: 0.8;
+}
+
+.from-wrapper {
+  position: absolute;
+  top: 210px;
+  right: 110px;
+  display: none;
+  width: 250px;
   opacity: 0;
 }
 
-.tabs-menu {
-  padding-left: 30px;
-  text-align: left;
-}
-
-.tab-pane {
-  padding-left: 40px;
-  text-align: left;
-}
-
-.tab-link {
-  margin-right: 50px;
-  padding-right: 0px;
-  padding-left: 0px;
-  background-color: transparent;
-  font-family: Lato, sans-serif;
-  color: hsla(0, 0%, 100%, .5);
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.tab-link.w--current {
-  border-style: none none solid;
-  border-width: 2px;
-  border-color: #fff;
-  background-color: transparent;
-  color: #fff;
+.submit-button {
+  margin-top: 12px;
+  border-radius: 3px;
   font-weight: 700;
 }
 
-.tab-content {
-  max-width: 650px;
-  margin-top: 20px;
-}
-
-.logomark-white {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-}
-
-.screens {
-  background-color: #fff;
-}
-
-.screen-slider {
-  height: 100%;
-  padding-top: 10px;
-  padding-bottom: 40px;
-  background-color: hsla(0, 0%, 95%, .95);
-}
-
-.slide {
-  width: 25%;
-  padding-right: 5px;
-  padding-left: 5px;
-  text-align: center;
-}
-
-.slide-nav {
-  padding-top: 14px;
-  font-size: 10px;
-}
-
-.icon {
-  color: #0e38b1;
-}
-
-.inline-form {
-  padding: 56px 449px;
-  background-color: #fff;
-  color: #0e38b1;
-}
-
 .text-field {
-  display: inline-block;
-  width: 74%;
-  margin-right: 10px;
-  padding: 26px;
-  border-style: none;
-  background-color: #f2f2f2;
-  font-family: 'Chronicle display light', sans-serif;
-  font-size: 20px;
-}
-
-.submit-button {
-  position: relative;
-  top: -4px;
-  width: 100px;
-  padding: 16px;
-  border-radius: 6px;
-  background-color: #0e38b1;
-}
-
-.h2-form {
-  font-family: 'Chronicle display light', sans-serif;
-  font-size: 38px;
-  line-height: 44px;
-  font-weight: 400;
+  border-style: none none solid;
+  border-top-width: 1px;
+  border-top-color: #000;
+  border-bottom-width: 3px;
+  border-bottom-color: #fff;
+  background-color: transparent;
+  color: #fff;
 }
 
 @media (max-width: 991px) {
   .logo {
-    width: 300px;
-  }
-  .project-details-button {
     position: static;
-    margin-top: 24px;
-  }
-  .button-div {
-    text-align: center;
-  }
-  .h2 {
-    text-align: left;
-  }
-  .list {
-    -webkit-column-count: 1;
-    -moz-column-count: 1;
-    column-count: 1;
-  }
-  .profile-picture {
-    margin-right: 18px;
-  }
-  .h4 {
-    position: static;
-    top: -27px;
-    text-align: left;
-  }
-  .p-about {
-    text-align: left;
-  }
-  .profile-header-wrap {
-    position: relative;
-    right: -4px;
-    text-align: center;
-  }
-  .project-h1 {
-    right: 92px;
-  }
-  .project-detail-section {
-    padding-right: 50px;
-    padding-left: 50px;
-  }
-  .badge.sally-badge {
-    right: -45px;
-  }
-  .project-title-wrap {
-    right: 96px;
-  }
-  .project-detail-body-section {
-    padding-right: 50px;
-    padding-left: 50px;
-  }
-  .project-detail-body-container {
-    padding-right: 0px;
-    padding-left: 0px;
-  }
-  .project-detail-col2 {
-    margin-top: 34px;
-  }
-  .logomark-white {
-    position: static;
-  }
-  .slide {
-    width: 50%;
-  }
-  .inline-form {
-    padding-right: 60px;
-    padding-left: 60px;
   }
 }
 
 @media (max-width: 767px) {
-  .work-card {
-    width: 100%;
-  }
-  .logo {
-    width: 330px;
-  }
-  .project-details-button {
-    position: absolute;
-    top: auto;
+  .text.starting-at {
     right: 40px;
-    bottom: 34px;
   }
-  .list {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
+  .price {
+    right: 86px;
+    font-size: 80px;
+    line-height: 80px;
   }
-  .h4 {
-    text-align: left;
+  .more {
+    right: 173px;
   }
-  .job-title {
-    text-align: left;
-  }
-  .p-about {
-    text-align: left;
-  }
-  .profile-header-wrap {
-    position: relative;
-  }
-  .project-hero-section {
-    background-color: #f3f0f0;
-    background-position: 44% 15%;
-    background-size: 960px;
-  }
-  .project-h1 {
-    right: 56px;
-    bottom: 319px;
-    font-size: 50px;
-  }
-  .badge.sally-badge {
-    top: 8px;
-    right: -29px;
-    padding-right: 6px;
-    padding-left: 6px;
-  }
-  .project-title-wrap {
-    right: 39px;
-    bottom: 40px;
-  }
-  .logomark-white {
-    position: absolute;
+  .from-wrapper {
+    right: 16px;
   }
 }
 
 @media (max-width: 479px) {
-  .work-card.card2 {
-    background-image: -webkit-linear-gradient(270deg, transparent 60%, rgba(0, 0, 0, .25)), url('../images/sally-hero.png');
-    background-image: linear-gradient(180deg, transparent 60%, rgba(0, 0, 0, .25)), url('../images/sally-hero.png');
-    background-position: 0px 0px, 50% 50%;
-    background-size: auto, cover;
-    background-repeat: repeat, no-repeat;
+  .section {
+    padding-right: 20px;
+    padding-left: 20px;
   }
-  .work-card.card3 {
-    background-image: -webkit-linear-gradient(270deg, transparent 60%, rgba(0, 0, 0, .25)), url('../images/Apple-Watch_Meetly1.png');
-    background-image: linear-gradient(180deg, transparent 60%, rgba(0, 0, 0, .25)), url('../images/Apple-Watch_Meetly1.png');
-    background-position: 0px 0px, 50% 25%;
-    background-size: auto, 440px;
-    background-repeat: repeat, no-repeat;
-  }
-  .work-card.card4 {
-    background-image: -webkit-linear-gradient(270deg, transparent 60%, rgba(0, 0, 0, .25)), url('../images/si-hero.png');
-    background-image: linear-gradient(180deg, transparent 60%, rgba(0, 0, 0, .25)), url('../images/si-hero.png');
-    background-position: 0px 0px, 50% 50%;
-    background-size: auto, cover;
-    background-repeat: repeat, no-repeat;
-  }
-  .work-card.card5 {
-    background-image: -webkit-linear-gradient(270deg, transparent 59%, rgba(0, 0, 0, .25)), url('../images/L6-Hero.png');
-    background-image: linear-gradient(180deg, transparent 59%, rgba(0, 0, 0, .25)), url('../images/L6-Hero.png');
-    background-position: 0px 0px, 16% 50%;
-    background-size: auto, cover;
-    background-repeat: repeat, no-repeat;
-  }
-  .work-card.card6 {
-    background-image: -webkit-linear-gradient(270deg, transparent 60%, rgba(0, 0, 0, .25)), url('../images/glance_profile.png');
-    background-image: linear-gradient(180deg, transparent 60%, rgba(0, 0, 0, .25)), url('../images/glance_profile.png');
-    background-position: 0px 0px, 50% 3%;
-    background-size: auto, cover;
-    background-repeat: repeat, no-repeat;
-  }
-  .work-card.card7 {
-    background-image: -webkit-linear-gradient(270deg, transparent 60%, rgba(0, 0, 0, .25)), url('../images/IMG_0535.jpg');
-    background-image: linear-gradient(180deg, transparent 60%, rgba(0, 0, 0, .25)), url('../images/IMG_0535.jpg');
-    background-position: 0px 0px, 50% 5%;
-    background-size: auto, cover;
-    background-repeat: repeat, no-repeat;
-  }
-  .work-card.about {
-    height: auto;
+  .container {
+    text-align: center;
   }
   .logo {
-    width: 250px;
-  }
-  .project-details-button {
-    position: static;
-  }
-  .h2.h2-sally {
-    text-align: center;
-  }
-  .list {
-    -webkit-column-count: 1;
-    -moz-column-count: 1;
-    column-count: 1;
-  }
-  .list-item {
-    text-align: center;
-  }
-  .profile-picture {
     display: block;
     margin-right: auto;
     margin-left: auto;
   }
-  .h4 {
-    text-align: center;
-  }
-  .h4.h4-sally {
-    text-align: left;
-  }
-  .job-title {
-    text-align: center;
-  }
-  .p-about {
-    margin-top: 6px;
-    margin-bottom: 20px;
-    text-align: justify;
-  }
-  .profile-header-wrap {
-    position: static;
+  .h1 {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    text-align: center;
   }
-  .link {
+  .text {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    text-align: center;
   }
-  .project-hero-section {
-    background-position: 50% 50%;
-    background-size: 960px;
-  }
-  .project-h1 {
-    left: 56px;
-    right: 56px;
-    bottom: 319px;
-  }
-  .project-detail-section {
-    padding: 40px 10px 50px;
-  }
-  .badge.sally-badge {
-    top: 9px;
-    right: 40px;
-  }
-  .project-title-wrap {
-    position: absolute;
-    left: 0px;
+  .text.starting-at {
+    position: relative;
+    top: 0px;
     right: 0px;
-    bottom: 26px;
-    display: block;
-    width: 230px;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
+    margin-top: 34px;
   }
-  .project-detail-body-section {
-    padding: 40px 20px 50px;
+  .price {
+    position: relative;
+    top: 0px;
+    right: 0px;
   }
-  .tabs-menu {
-    padding-left: 0px;
-    text-align: center;
+  .more {
+    position: relative;
+    top: 0px;
+    right: 0px;
+    margin-top: 16px;
   }
-  .tab-pane {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-  .tab-link {
-    display: inline-block;
-    margin-left: 10px;
-    padding-right: 0px;
-    padding-left: 0px;
-    text-align: center;
-  }
-  .tab-link.w--current {
-    margin-bottom: 8px;
-    text-align: center;
-  }
-  .logomark-white {
-    position: static;
-    margin-top: 20px;
-  }
-  .slide {
-    width: 100%;
-    padding-right: 0px;
-    padding-left: 0px;
-  }
-  .inline-form {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-  .text-field {
-    display: block;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  .submit-button {
-    display: block;
-    width: 100%;
+  .from-wrapper {
+    top: 592px;
   }
 }
 
