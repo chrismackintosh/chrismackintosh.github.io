@@ -119,6 +119,11 @@
   font-weight: 700;
 }
 
+.text-field:focus {
+  border-radius: 3px;
+  background-color: hsla(0, 0%, 100%, .2);
+}
+
 .mobile-fade {
   position: fixed;
   left: 0px;
@@ -127,6 +132,12 @@
   height: 100px;
   background-image: -webkit-linear-gradient(270deg, transparent, #000 93%);
   background-image: linear-gradient(180deg, transparent, #000 93%);
+}
+
+.success-message {
+  background-color: transparent;
+  color: #fff;
+  font-weight: 700;
 }
 
 @media (max-width: 991px) {
