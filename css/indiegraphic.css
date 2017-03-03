@@ -156,7 +156,7 @@
   }
   .logo {
     position: static;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     margin-left: 0px;
   }
   .h1 {
@@ -191,6 +191,12 @@
   .row {
     margin-left: 0px;
     text-align: center;
+  }
+  .logo-wrap {
+    display: block;
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -239,18 +245,17 @@
   }
   .logo {
     display: block;
-    margin-right: auto;
-    margin-left: auto;
   }
   .h1 {
     display: block;
-    width: 250px;
+    width: 234px;
     margin-right: auto;
     margin-left: auto;
+    text-align: left;
   }
   .text {
     display: block;
-    width: 212px;
+    width: 222px;
     margin-right: auto;
     margin-bottom: 0px;
     margin-left: auto;
@@ -259,7 +264,7 @@
     position: relative;
     top: 0px;
     right: 0px;
-    margin-top: 34px;
+    margin-top: 20px;
   }
   .price {
     position: relative;
@@ -280,6 +285,9 @@
     margin-top: 16px;
     margin-right: auto;
     margin-left: auto;
+  }
+  .logo-wrap {
+    width: 234px;
   }
 }
 
