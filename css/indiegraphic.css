@@ -108,20 +108,21 @@
 
 .text-field {
   height: 50px;
-  border-style: none none solid;
+  border-style: none;
   border-top-width: 1px;
   border-top-color: #000;
   border-bottom-width: 1px;
   border-bottom-color: #fff;
   border-radius: 3px;
-  background-color: hsla(0, 0%, 100%, .1);
+  background-color: hsla(0, 0%, 100%, .3);
   color: #fff;
   font-weight: 700;
 }
 
 .text-field:focus {
+  border-bottom-style: none;
   border-radius: 3px;
-  background-color: hsla(0, 0%, 100%, .2);
+  background-color: hsla(0, 0%, 100%, .4);
 }
 
 .mobile-fade {
