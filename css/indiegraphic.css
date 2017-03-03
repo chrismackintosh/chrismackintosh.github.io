@@ -1,5 +1,4 @@
 .body {
-  height: 100%;
   background-color: #000;
   background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('../images/store.jpg');
   background-image: linear-gradient(180deg, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('../images/store.jpg');
@@ -10,7 +9,6 @@
 }
 
 .section {
-  height: 100%;
   padding-top: 40px;
 }
 
@@ -21,15 +19,9 @@
   padding-left: 60px;
 }
 
-.logo {
-  position: absolute;
-  top: 80px;
-  margin-bottom: 20px;
-  margin-left: 40px;
-}
-
 .h1 {
   width: 220px;
+  margin-top: 0px;
   margin-bottom: 40px;
   padding-bottom: 20px;
   border-bottom: 4px solid #fff;
@@ -43,16 +35,11 @@
 }
 
 .text.starting-at {
-  position: absolute;
-  top: 60px;
-  right: 142px;
   font-weight: 700;
 }
 
 .price {
-  position: absolute;
-  top: 82px;
-  right: 142px;
+  margin-bottom: 30px;
   color: #fff;
   font-size: 100px;
   line-height: 100px;
@@ -67,9 +54,6 @@
 }
 
 .more {
-  position: absolute;
-  top: 212px;
-  right: 266px;
   display: inline-block;
   padding: 10px 34px;
   border-radius: 3px;
@@ -85,9 +69,6 @@
 }
 
 .from-wrapper {
-  position: absolute;
-  top: 210px;
-  right: 110px;
   display: none;
   width: 250px;
   opacity: 0;
@@ -141,6 +122,20 @@
   font-weight: 700;
 }
 
+.col2 {
+  padding-left: 50px;
+}
+
+.row {
+  margin-top: 60px;
+  margin-bottom: 100px;
+  margin-left: 40px;
+}
+
+.footer {
+  height: 10000px;
+}
+
 @media (max-width: 991px) {
   .body {
     height: auto;
@@ -153,6 +148,7 @@
   }
   .section {
     height: auto;
+    text-align: center;
   }
   .container {
     height: auto;
@@ -160,7 +156,41 @@
   }
   .logo {
     position: static;
-    margin-left: 80px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+  }
+  .h1 {
+    display: block;
+    width: 400px;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
+  }
+  .text {
+    display: block;
+    width: 400px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+  }
+  .text.starting-at {
+    margin-bottom: 0px;
+  }
+  .price {
+    margin-bottom: 20px;
+  }
+  .from-wrapper {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .col2 {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .row {
+    margin-left: 0px;
+    text-align: center;
   }
 }
 
@@ -172,9 +202,6 @@
     background-size: auto, auto, cover;
     background-repeat: repeat, repeat, no-repeat;
     background-attachment: scroll, scroll, scroll;
-  }
-  .logo {
-    margin-left: 60px;
   }
   .text.starting-at {
     right: 40px;
@@ -217,6 +244,7 @@
   }
   .h1 {
     display: block;
+    width: 250px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -224,6 +252,7 @@
     display: block;
     width: 212px;
     margin-right: auto;
+    margin-bottom: 0px;
     margin-left: auto;
   }
   .text.starting-at {
@@ -236,6 +265,7 @@
     position: relative;
     top: 0px;
     right: 0px;
+    margin-bottom: 0px;
   }
   .more {
     position: relative;
