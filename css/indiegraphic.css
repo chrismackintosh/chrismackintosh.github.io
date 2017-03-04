@@ -181,7 +181,7 @@
   }
   .h1 {
     display: block;
-    width: 400px;
+    width: 560px;
     margin-right: auto;
     margin-bottom: 30px;
     margin-left: auto;
@@ -228,6 +228,9 @@
     background-size: auto, auto, cover;
     background-repeat: repeat, repeat, no-repeat;
     background-attachment: scroll, scroll, scroll;
+  }
+  .h1 {
+    width: 360px;
   }
   .text.starting-at {
     right: 40px;
