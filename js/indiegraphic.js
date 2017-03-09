@@ -707,6 +707,11 @@
   Webflow.define('backgroundVideo', module.exports = function ($) {
 
     function ready () {
+      // Prevent default render while in-app
+      if (Webflow.env()) {
+        return;
+      }
+
       var backgroundVideoNodes = $(document).find('.w-background-video');
       if (backgroundVideoNodes.length === 0) {
         return;
@@ -989,7 +994,7 @@
 
     function configure(data) {
       // Determine if z-index should be managed
-      const zIndex = Number(data.el.css('z-index'));
+      var zIndex = Number(data.el.css('z-index'));
       data.manageZ = zIndex === defaultZIndex || zIndex === defaultZIndex + 1;
 
       data.config = {
