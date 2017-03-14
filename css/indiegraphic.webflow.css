@@ -47,8 +47,8 @@
 .hero-col3 {
   height: 400px;
   background-image: url('../images/nabthat.png');
-  background-position: 0px 0px;
-  background-size: 640px;
+  background-position: 50% 0px;
+  background-size: cover;
 }
 
 .hero-col-4 {
