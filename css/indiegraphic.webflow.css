@@ -1,0 +1,70 @@
+.section-top {
+  padding: 50px;
+}
+
+.body {
+  background-color: #fbfaf9;
+  font-family: Karla, sans-serif;
+  color: #000;
+}
+
+.h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.h1.h1-hero {
+  max-width: 500px;
+  line-height: 40px;
+}
+
+.hero-col-1 {
+  height: 400px;
+  background-image: url('../images/56ed66be77b06a3416086f8a_iPhone_6_plus_perspective-Gold.png');
+  background-position: 50% 0px;
+  background-size: cover;
+}
+
+.hero-col-2 {
+  height: 400px;
+  background-image: url('../images/glance_profile.png');
+  background-position: 50% 0px;
+  background-size: cover;
+}
+
+.link {
+  position: absolute;
+  top: 77px;
+  right: 60px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #000;
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.hero-col3 {
+  height: 400px;
+  background-image: url('../images/nabthat.png');
+  background-position: 0px 0px;
+  background-size: 640px;
+}
+
+.hero-col-4 {
+  height: 400px;
+  background-image: url('../images/56bccf27590c6fab210e0ec3_hero-launch6-sm.png');
+  background-position: 0px 0px;
+  background-size: 1182px;
+}
+
+@media (max-width: 479px) {
+  .section-top {
+    height: 400px;
+  }
+  .link {
+    left: 49px;
+    top: 311px;
+  }
+}
+

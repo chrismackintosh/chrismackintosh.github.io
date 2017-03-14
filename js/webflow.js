@@ -4374,10 +4374,3 @@
 
 }());
 
-/**
- * ----------------------------------------------------------------------
- * Webflow: Interactions: Init
- */
-Webflow.require('ix').init([
-  {"slug":"form","name":"Form","value":{"style":{},"triggers":[{"type":"click","selector":".from-wrapper","stepsA":[{"display":"block","opacity":1,"transition":"opacity 200 ease 0"}],"stepsB":[]},{"type":"click","stepsA":[{"display":"none"}],"stepsB":[]}]}}
-]);
